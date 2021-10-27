@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br"/>
+	<head>
+		<title>Coffee Shop</title>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Henrique Bolzan"/>
+		<meta name="keywords" content="café, café gourmet, café no df, produção de café df"/>
+		<meta name="description" content="Produtora indidual de café no distrito federal"/>
+		<link rel="stylesheet" type="text/css" href="style.css">		
+	</head>
+
+	<body>
+		<script>
+							var x = 0;
+
+				for (var i = 10; i <= 15; i++) {
+
+				x += i;
+
+				}
+			
+		</script>
+		
+		<nav>
+			<a class="bt-menu" href="#">HOME</a>
+			<a class="bt-menu" href="#pag-sobre">SOBRE</a>
+			<a class="bt-menu" href="#pag-prods">PRODUTOS</a>
+			<a class="bt-menu" href="#pag-encomenda">ENCOMENDAS</a>
+		</nav>
+		<header>
+			<img src="img/banner.png" alt="banner com a grãos de afé e chicaras dos lados, no centro nome da loja coffee shop"/>
+		</header>		
+		<article>
+			<section id="pag-sobre">			
+				<h1>A Coffe Shop</h1>
+			
+				<p class="intro">A Coffee Shop é uma produtora e distribuidora independente do Distrito Federal que vende café artesanal torrado e moído por profissionais treinados com técnicas específicas para trazer o melhor do café à sua mesa.
+				Nós temos uma váriedade interessante de tipos de grãos, alguns plantados por nós mesmo e alguns importados de fazendas no exterior que atendem a nossa expectativa quanto a qualidade do café, temos opções clássicas como o café Arábica e até um café premium chamado de Kopi Luwak(também conhecido como café Civeta). 
+				<p class="intro"> Fazemos entregas, mas você pode ir até nossa loja para conversar e é claro tomar um café!</p>
+			</section>
+		</article>
+
+		<section id="pag-prods">
+			<h2> Produtos</h2>
+
+			<p id="txt-card">Nossa tabela de cafés e os preços por Kilograma(Kg)</p>
+		<div id="container">
+			<div class="card" >				
+					<img class="img-prods" src="img/arabica.png">
+					<button class="btinf" onclick="clicou1()">Informações</button>
+						<script>
+							function clicou1(){
+								window.alert('O Arábica Fino é produzido numa altitude acima de 950 m e é totalmente puro e sem misturas. Seu aroma é intenso e os sabores são bastante variados, bem como níveis de corpo e acidez.')
+							}
+						</script>
+					<div class="texto-card">						
+						<p>Café Arábica Fino | R$ 25,00</p>				
+					</div>
+				</div>
+			
+				<div class="card">
+					<img class="img-prods" src="img/bourbon.png">
+					<button class="btinf" onclick="clicou2()">Informações</button>
+						<script>
+							function clicou2(){
+								window.alert('Os pés de Bourbon chegam a 3 metros de altura e seus frutos têm formatos similares em relação aos grãos comuns, mas tamanho reduzido. No quesito sabor além do aroma intenso, o café tem sabor diferenciado com notas doces, lembrando avelãs.')
+							}
+						</script>
+					<div class="texto-card">						
+						<p>Café Bourbon | R$ 48,00</p>
+					</div>
+				</div>
+				<div class="card">
+					<img class="img-prods" src="img/catuai.png">
+					<button class="btinf" onclick="clicou3()">Informações</button>
+						<script>
+							function clicou3(){
+								window.alert('Um café 100% brasileiro,o traço diferencial ocorre por que a altitude acima dos 800m permite que o grão de café absorva com mais intensidade os açúcares naturais do processo de maturação. De sabor levemente adocicado, suavidade e acidez média.')
+							}
+						</script>
+					<div class="texto-card">						
+						<p>Café Catuaí Médio | R$ 62,00</p>
+					</div>
+				</div>
+				<div class="card">
+					<img class="img-prods" src="img/kopi.png">
+					<button class="btinf" onclick="clicou4()">Informações</button>
+						<script>
+							function clicou4(){
+								window.alert('Famoso café que passa por um processo de fermentação natural no sistema digestivo de uma Civeta, adquire um leve sabor de frutas vermelhas, sem nenhum índice de acidez e um leve gosto amargo.')
+							}
+						</script>
+					<div class="texto-card">						
+						<p>Café Civeta(Kopi Luwak) <br> R$ 187,00</p>
+					</div>				
+				</div>
+			</div>
+		</section>
+
+		<section id="pag-encomenda">
+					<h1> Encomendas</h1>
+							
+			<form id="form1" name="" method="" action="" >
+				<label for="nome">Nome:</label>
+				<input id="nome" type="text" name="nome" placeholder="Nome Completo"
+				required />
+
+				<label for="email">E-mail:</label>
+				<input id="email" type="email" name="email" placeholder="usuário@email.com"/>
+												
+				<label for="nivel">Produto</label>
+				<select id="nivel" name="nivel">
+					<option>Escolha o tipo de café</option>
+					<option value="arabica">Café Arábica</option>
+					<option value="borbon">Café Bourbon</option>
+					<option value="catuai">Café Catuai</option>
+					<option value="kopi">Café Civeta(Kopi Luwak)</option>					
+				</select>
+
+				<div>
+					<label for="tempo">Quantidade(em Kg)</label>
+					<input id="tempo" type="number" name="tempo" min="1" max="6" step="1">
+					</div>	
+
+				<fieldset>
+					<legend>Forma de Retirada</legend>
+					<input id="delivery" type="radio" name="retirada" value="delivery"> <label for="delivery">Delivery(indicar endereço no campo mensagem) </label><br/>
+					<input id="local" type="radio" name="retirada" value="local"> <label for="local">Retirar na Loja</label><br/>
+				</fieldset>
+
+				<label for="msg">Mensagem:</label>
+				<textarea id="msg" cols="97" rows="4"></textarea>
+				<div id="bt-form">
+					<input type="submit" name="bt-enviar" value="ENVIAR"/>
+					<input type="reset" name="bt-cancelar" value="CANCELAR"/>
+				</div>
+			</form>
+			</section>	
+
+		<footer>
+			<p> Desenvolvido por <a id="bt-foot" href="https://www.linkedin.com/in/henriquebolzan/" target="_blank">Henrique Bolzan</a> - 2021 </p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,190 @@
+*{margin:0;}
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Texturina:ital@1&display=swap');
+body{
+	background-color: rgb(255,255,255);
+}
+header, img{
+	width: 100%;
+	height: 350px;
+}
+/* MENU COMEÇA AQUI*/
+nav{
+		background-color:#4d2d0e;
+		text-align: right;
+		padding: 20px;
+}
+
+a{
+	font: 1.5rem Texturina, serif;
+	text-decoration: none;	
+}
+
+.bt-menu{
+	margin-right: 50px;
+	font-weight: bold;
+}
+.bt-menu:link, .bt-menu:visited{
+	color: #FFF;
+}
+.bt-menu:hover{
+	color: #E36FBA;
+}
+.bt-menu:active{
+	color:#EB7657;
+} 
+/* MENU TERMINA AQUI*/
+
+article{
+	width: 100%;
+	background-color: #B88D6A;
+	padding:20px;
+	box-sizing: border-box;
+}
+
+h1{
+	font: 6rem 'Texturina', serif;
+	color:#4d2d0e;
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+.intro{
+	font: 1.5rem 'RocknRoll One', sans-serif;
+	color:#000;
+	text-align: center; 
+	line-height: 50px;
+	font-size: 32px;
+	margin-bottom: 50px;
+}
+
+h2{
+	font:4rem Texturina, serif ;
+	color:#4d2d0e;
+}
+
+#pag-prods{
+	background-color:#C29570;
+	padding:25px;
+}
+#container{
+	display: flex;
+	margin-bottom: 20px;
+}
+.card{
+	background-color: #E3C278;
+	margin:10px;
+	width: 25%;
+	padding: 5px;
+	border-radius: 10px 10px;
+	box-shadow: 5px 5px 5px #3B2D22;
+}
+.card:hover{
+	box-shadow: 1px 1px 5px #473729;
+}
+
+.texto-card p{
+	font: 1.5rem 'RocknRoll One', sans-serif;
+	color:#000;
+	text-align: center;	
+}
+
+.img-prods{
+	height: 400px;
+}
+#txt-card{
+	font: 2rem 'RocknRoll One', sans-serif;
+	align-content: center;
+	color:#000;
+	margin-bottom: 10px;
+}
+h3{
+	font:1.6rem Texturina, serif ;
+	color:#F5190A;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.btinf{
+	background-color:#4d2d0e;
+	color: white;
+	font:1.2rem Texturina, serif;
+	margin-left: 105px;
+	margin-bottom: 10px;
+}
+
+/*INICIO pagina encomenda*/
+
+#pag-encomenda{
+	padding: 20px;
+	background-color:#fff;
+}
+
+#pag-encomenda p{
+	color: black;
+	font: 2rem 'RocknRoll One', sans-serif;
+	margin-top: 10px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+form{
+	width: 700px;
+	margin: 0 auto;
+}
+input, select, textarea{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	box-sizing: border-box;
+	border: 1px solid #c4c4c4;
+
+}
+label, fieldset{
+	font: 1.2rem 'RocknRoll One', sans-serif;
+}
+fieldset{
+	border: 1px solid #777;
+	margin-bottom: 10px;
+}
+
+
+input[type="radio"], input[type="checkbox"]{
+	width: 15px;
+	height: 15px;
+	
+}
+textarea{
+	height: 90px;
+}
+
+#bt-form{
+	display: flex;
+
+}
+
+input[type="submit"], input[type="reset"]{
+	margin: 20px;
+	background-color: #3FFF52;
+	color: #fff;
+	border: 0;
+	border-radius: 5px;
+}
+input[type="reset"]{
+	background-color: #D64335;
+}
+
+
+/*RODAPÉ*/
+footer{
+	background-color: #000;
+	padding: 12px;
+	
+}
+
+footer p{
+	text-align: center;
+	color: #FFF;
+}
+footer a{
+	color: #FFF;
+}
+/*RODAPÉ*/
